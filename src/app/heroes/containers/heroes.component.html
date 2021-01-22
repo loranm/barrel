@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title> Heroes </mat-card-title>
+  <mat-card-content>
+    <app-heroes-table
+      [heroes]="heroes$ | async"
+      (onSelectHero)="selectHero($event)"
+    >
+    </app-heroes-table>
+  </mat-card-content>
+</mat-card>

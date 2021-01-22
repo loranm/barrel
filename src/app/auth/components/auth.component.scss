@@ -1,0 +1,25 @@
+:host {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  mat-card {
+    padding: 2rem;
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    mat-checkbox {
+      margin-left: auto;
+    }
+  }
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+}

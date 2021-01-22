@@ -1,0 +1,8 @@
+<mat-card *ngIf="hero$ | async as hero">
+  <mat-card-title>
+    {{ hero.name }}
+  </mat-card-title>
+  <mat-card-footer>
+    {{ hero._id }}
+  </mat-card-footer>
+</mat-card>

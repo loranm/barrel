@@ -1,0 +1,9 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option
+    *ngFor="let hero of heroes"
+    [value]="hero"
+    (click)="onClicked(hero)"
+  >
+    {{ hero.name }}
+  </mat-list-option>
+</mat-selection-list>

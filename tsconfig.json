@@ -12,9 +12,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@app/appbar": ["src/app/app-bar/index.ts"],
+      "@app/material": ["src/app/material/index.ts"],
+      "@app/admin": ["src/app/admin/index.ts"],
+      "@app/auth": ["src/app/auth/index.ts"],
+      "@app/heroes": ["src/app/heroes/index.ts"]
+    }
   }
 }
