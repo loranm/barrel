@@ -4,6 +4,7 @@
       <mat-card-title>Login</mat-card-title>
     </mat-card-header>
     <mat-card-content>
+      <!-- email field -->
       <mat-form-field appearance="fill">
         <mat-label>Enter your email</mat-label>
         <input
@@ -14,6 +15,7 @@
         />
         <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
       </mat-form-field>
+      <!-- password field -->
       <mat-form-field appearance="fill">
         <mat-label>Enter your password</mat-label>
         <input
@@ -31,6 +33,7 @@
           <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
         </button>
       </mat-form-field>
+      <!-- remember me checkbox -->
       <mat-checkbox formControlName="rememberMe">rememberMe</mat-checkbox>
     </mat-card-content>
     <mat-card-actions>
